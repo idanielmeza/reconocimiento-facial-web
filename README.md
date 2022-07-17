@@ -22,12 +22,13 @@ Para probar el proyecto
 
 ### Registro
 ```bash
-  
+  cd registro
   npm install
   npm start
 ```
 ### Reconocimiento
 ```bash
+    cd reconocimiento
     pip install -r requirements.txt
     python main.py
 ```
