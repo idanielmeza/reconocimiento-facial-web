@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/taildwind.js"></script>
+    <script src="/assets/js/axios.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <title>Registro</title>
+</head>
+<body class="bg-slate-100">
+    
+    <div class="flex my-10">
+        <form id="form" class="mx-auto bg-white p-10 rounded-md shadow-md text-center">
+            <h1 class="text-3xl text-center bg-blue-500 text-white w-full p-2 rounded-md shadow-sm mb-5" >Registro de nuevos usuarios</h1>
+
+            <div class="my-2">
+                <label class="font-bold text-xl">Nombre del usuario</label>
+                <input id="nombre-usuario" type="text" name="nombre" class="border border-gray-300 p-2 w-full" placeholder="Nombre del usuario">
+            </div>
+
+            <video class="shadow-md" muted id="video-registro"></video>
+
+            <canvas id="canvas-registro" class="hidden"></canvas>
+    
+            <input type='submit' id="btn-guardar" value='Registrar' class='bg-blue-500 hover:bg-blue-700 text-white rounded-b-md p-2 w-full text-center rounded-sm hover:pointer'>
+    
+        </form>
+    
+    </div>
+
+    
+
+
+
+</body>
+</html>
