@@ -9,7 +9,7 @@ Reconocimiento facial desde webcam.
 
 **Registro:** NodeJs, Express, Handlebars , TailwindCSS
 
-**Reconocimiento:** Python, Flask, Opencv
+**Reconocimiento:** Python, Flask, Opencv, TailwindCSS
 
 **Base de datos** PostgreSql
 
