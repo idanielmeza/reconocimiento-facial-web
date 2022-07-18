@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const btnCamara = document.getElementById('activar-camara');
+
+    btnCamara.addEventListener('click', () => {
+        const video_registro = document.getElementById('video-registro');
+        video_registro.classList.remove('hidden');
+        btnCamara.remove();
+        iniciar_video();
+    });
+
+})
+
+
+function iniciar_video(){
     const video_registro = document.getElementById('video-registro');
     const canvas_registro = document.getElementById('canvas-registro');
 
@@ -30,10 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const img_data = canvas_registro.toDataURL('image/jpeg');
             const img_blob = dataURItoBlob(img_data);
 
-            // const img_data_base64 = img_data.replace(/^data:image\/png;base64,/, '');
-            // const img_data_base64_blob = new Blob([img_data_base64], {type: 'image/jpeg'});
-
-            // const image_buffer = img_data_base64_blob;
         
             const nombre_usuario = document.getElementById('nombre-usuario').value;
 
@@ -52,13 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     
-    
-
-    
-
-
-
-})
+}
 
 
 function dataURItoBlob(dataURI)

@@ -17,14 +17,20 @@
 
             <div class="my-2">
                 <label class="font-bold text-xl">Nombre del usuario</label>
-                <input id="nombre-usuario" type="text" name="nombre" class="border border-gray-300 p-2 w-full" placeholder="Nombre del usuario">
+                <div class="flex">
+                    <input id="nombre-usuario" type="text" name="nombre" class="border border-gray-300 p-2 w-full" placeholder="Nombre del usuario">
+                    <button id="activar-camara" type="button" class="bg-blue-500 hover:bg-blue-700 text-white p-2 text-center rounded-sm w-8">
+                        <img src="/assets/img/videocam.svg" class="w-5">
+                    </button>
+                </div>
+                
             </div>
 
-            <video class="shadow-md" muted id="video-registro"></video>
+            <video class="shadow-md hidden aspect-video" muted id="video-registro"></video>
 
             <canvas id="canvas-registro" class="hidden"></canvas>
     
-            <input type='submit' id="btn-guardar" value='Registrar' class='bg-blue-500 hover:bg-blue-700 text-white rounded-b-md p-2 w-full text-center rounded-sm hover:pointer'>
+            <input type='submit' id="btn-guardar" value='Registrar' class='bg-blue-500 hover:bg-blue-700 text-white rounded-b-md p-2 w-full text-center rounded-sm'>
     
         </form>
     
